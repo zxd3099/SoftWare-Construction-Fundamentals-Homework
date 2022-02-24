@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace zxd3099
+namespace Calculator
 {
     class Program
     {
