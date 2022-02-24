@@ -1,5 +1,5 @@
 ﻿
-namespace Assignment1_2
+namespace Calculator
 {
     partial class Form1
     {
