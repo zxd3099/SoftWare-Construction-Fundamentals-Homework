@@ -1,7 +1,0 @@
-D:\C++项目\Assignment1\Assignment1-1\bin\Debug\示例1.exe.config
-D:\C++项目\Assignment1\Assignment1-1\bin\Debug\示例1.exe
-D:\C++项目\Assignment1\Assignment1-1\bin\Debug\示例1.pdb
-D:\C++项目\Assignment1\Assignment1-1\obj\Debug\Assignment1-1.csprojAssemblyReference.cache
-D:\C++项目\Assignment1\Assignment1-1\obj\Debug\Assignment1-1.csproj.CoreCompileInputs.cache
-D:\C++项目\Assignment1\Assignment1-1\obj\Debug\示例1.exe
-D:\C++项目\Assignment1\Assignment1-1\obj\Debug\示例1.pdb
