@@ -15,8 +15,13 @@ namespace Calculator
             Console.Write("Please input two numbers(Sample:2 3): ");
             string input = Console.ReadLine();
             string[] inputnum = input.Split(' ');
-            a = Double.Parse(inputnum[0]);
-            b = Double.Parse(inputnum[1]);
+            try{
+                a = Double.Parse(inputnum[0]);
+                b = Double.Parse(inputnum[1]);
+            }catch{
+                Console.WriteLine("Invalid input!);
+                System.Environment.Exit(0);                 
+            }
             Console.Write("Please input an operator(Sample: +): ");
             op = (char)Console.Read();
             switch (op) {
