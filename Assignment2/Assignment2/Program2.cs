@@ -4,7 +4,7 @@ namespace Assignment2
 {
     class Program2
     {
-        static void Main2(string[] args)
+        static void Main(string[] args)
         {
             Console.Write("Input an integer array: ");
             string[] temp = Console.ReadLine().Split(' ');
