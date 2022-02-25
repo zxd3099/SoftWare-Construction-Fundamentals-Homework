@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Assignment2
 {
@@ -20,9 +21,9 @@ namespace Assignment2
             {
                 Console.WriteLine("Invalid input!");
             }
-            
+
             // Output all prime factors of user-specified data
-            ArrayList result = new ArrayList();
+            var result = new HashSet<int>();
             OutputPrimeFactor(num, result);
             Console.Write("All prime factors of the data are: ");
             foreach(int i in result)
@@ -31,7 +32,7 @@ namespace Assignment2
             }
         }
 
-        private static void OutputPrimeFactor(int data, ArrayList list)
+        private static void OutputPrimeFactor(int data, HashSet<int> list)
         {
             if (data < 1) return;
             int i = 2;
