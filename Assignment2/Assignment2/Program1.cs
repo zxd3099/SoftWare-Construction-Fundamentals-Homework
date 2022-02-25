@@ -36,7 +36,7 @@ namespace Assignment2
         {
             if (data < 1) return;
             int i = 2;
-            while(data > 1)
+            while(data >= i * i)
             {
                 if (data % i == 0)
                 {
