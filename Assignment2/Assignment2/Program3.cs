@@ -4,7 +4,7 @@ namespace Assignment2
 {
     class Program3
     {
-        static void Main2(string[] args)
+        static void Main(string[] args)
         {
             // if i is a prime, then array[i] = false, else array[i] = true.
             bool[] array = new bool[101];
