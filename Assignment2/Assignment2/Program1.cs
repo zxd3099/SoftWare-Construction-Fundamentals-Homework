@@ -8,7 +8,7 @@ namespace Assignment2
         /* 
         Write a program to output all prime factors of user-specified data。
         */
-        static void Main1(string[] args)
+        static void Main(string[] args)
         {
             int num = 0;
             Console.Write("input data: ");
