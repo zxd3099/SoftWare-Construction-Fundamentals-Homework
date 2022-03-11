@@ -97,7 +97,7 @@ namespace Assignment3
 
         public override bool IsLegal()
         {
-            return (_side1 + _side2 > _side3) && (_side1 + _side3 > _side2) && (_side2 + _side3 > _side1);
+            return (_side1 + _side2 > _side3) && (_side1 + _side3 > _side2) && (_side2 + _side3 > _side1) && (_side1 > 0) && (_side2 > 0) && (_side3 > 0);
         }
     }
 
