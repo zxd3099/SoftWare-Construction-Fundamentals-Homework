@@ -63,7 +63,7 @@ namespace Assignment5
         }
         public List<Order> QueryByAmount(double amount)
         {
-            var order = from o in orders where o.OrderAmount == amount select o;
+            var order = from o in orders where o.OrderAmount >= amount select o;
             if (order == null) throw new ArgumentException("Order does not exist!");
             return order.ToList();
         }
