@@ -49,6 +49,8 @@ namespace Assignment9
                 {
                     GetCrawlInfo(current, "Crawler Failure! The Details: " + ex.Message);
                 }
+                urls[current] = true;
+                Parse(html, current);
             }
         }
 
