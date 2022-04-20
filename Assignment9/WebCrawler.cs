@@ -80,6 +80,7 @@ namespace Assignment9
             {
                 string strRef = match.Value.Substring(match.Value.IndexOf('=') + 1).Trim('"', '\"', '#', '>');
                 if (strRef.Length == 0) continue;
+                strRef = ConverToAbsoluteUrl(strRef, current);
                 if(urls[strRef] == null && Regex.IsMatch(new Uri(strRef).Host, HostFilterRegex))
                 {
                     urls[strRef] = false;
