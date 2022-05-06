@@ -45,6 +45,7 @@ namespace Assignment12.Controllers
         [HttpPost]
         public ActionResult<Order> PostOrder(Order order)
         {
+            FixOrder(order);
             try
             {
                 ctx.Orders.Add(order);
@@ -107,10 +108,22 @@ namespace Assignment12.Controllers
             }
             if(money != null)
             {
-                query = query.Where(o => o.TotalMoney == money);
+                query = query.Where(o => o.OrderDetails.Sum(d => d.Amount * d.OrderGoods.Price) >= money);
             }
             query = query.Include(o => o.OrderDetails).ThenInclude(o => o.OrderGoods);
             return query;
+        }
+        
+        private void FixOrder(Order order)
+        {
+            order.ClientID = order.OrderClient.ClientID;
+            order.OrderClient = null;
+            order.OrderDetails.ForEach(
+                d => {
+                    d.GoodsID = d.OrderGoods.GoodsID;
+                    d.OrderGoods = null;
+                }
+            );
         }
     }
 }
