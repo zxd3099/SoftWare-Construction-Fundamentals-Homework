@@ -4,7 +4,7 @@ namespace Assignment12
 {
     public class Client
     {
-        [Key]
+        public string ClientID {get; set;}
         public string Name {get; set;}
         public string VipShip {get; set;}
         public Client() { }
