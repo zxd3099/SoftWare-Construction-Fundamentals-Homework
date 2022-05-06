@@ -7,6 +7,7 @@ namespace Assignment12
     public class Order : IComparable
     {
         public string OrderID{get; set;}
+        public string ClientID {get; set;}
         public Client OrderClient{get; set;}
         public DateTime OrderTime{get; set;}
         public List<OrderDetail> OrderDetails{get; set;}
