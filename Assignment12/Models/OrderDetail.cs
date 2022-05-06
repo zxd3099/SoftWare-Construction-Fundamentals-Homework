@@ -3,6 +3,7 @@ namespace Assignment12
     public class OrderDetail 
     {
         public int OrderDetailID {get; set;}
+        public string GoodsID {get; set;}
         public Goods OrderGoods {get; set;}
         public int Amount {get; set;}
 
